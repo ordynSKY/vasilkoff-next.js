@@ -39,8 +39,8 @@ export default function Cards() {
                     <div
                         className="hcard hcard1"
                         data-tilt
-                        data-tilt-startX="85"
-                        data-tilt-startY="2"
+                        data-tilt-startx="85"
+                        data-tilt-starty="2"
                         data-tilt-reset="false"
                         data-tilt-max="2"
                         data-tilt-speed="200"
@@ -69,8 +69,8 @@ export default function Cards() {
                     <div
                         className="hcard hcard2"
                         data-tilt
-                        data-tilt-startX="2"
-                        data-tilt-startY="85"
+                        data-tilt-startx="2"
+                        data-tilt-starty="85"
                         data-tilt-reset="false"
                         data-tilt-max="2"
                         data-tilt-speed="200"
@@ -99,8 +99,8 @@ export default function Cards() {
                     <div
                         className="hcard hcard3"
                         data-tilt
-                        data-tilt-startX="85"
-                        data-tilt-startY="2"
+                        data-tilt-startx="85"
+                        data-tilt-starty="2"
                         data-tilt-reset="false"
                         data-tilt-max="2"
                         data-tilt-speed="200"
@@ -126,8 +126,8 @@ export default function Cards() {
                     <div
                         className="hcard hcard4"
                         data-tilt
-                        data-tilt-startX="2"
-                        data-tilt-startY="85"
+                        data-tilt-startx="2"
+                        data-tilt-starty="85"
                         data-tilt-reset="false"
                         data-tilt-max="2"
                         data-tilt-speed="200"

@@ -1,19 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { db } from "../../firebase";
-import { getDoc, getDocs, collection, doc } from "firebase/firestore";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { DataContext } from "../Context/DataContext";
 
 export default function PortfolioPage() {
-    const [responseData, setResponseData] = useState([]);
     const context = useContext(DataContext);
-
-    useEffect(() => {
-        console.log("context", context);
-    }, []);
-
-    console.log("arrayContext", context.arrayData);
 
     return (
         <>
@@ -23,18 +14,18 @@ export default function PortfolioPage() {
                     {Object.keys(context.arrayData).map((i, idx) => (
                         <div
                             className="project"
-                            data-projectName="Calculator Lock"
+                            data-projectname="Calculator Lock"
                             key={idx}
                         >
-                            <a href={`/portfolio/` + i}>
+                            <Link href={`/portfolio/` + i}>
                                 <Image
                                     src={context.arrayData[i].image}
                                     width={472}
                                     height={230}
                                     alt="vasilkoff"
                                 />
-                            </a>
-                            <div contentEditable="true" className="title">
+                            </Link>
+                            <div className="title">
                                 {context.arrayData[i].title}
                             </div>
                             <div className="detail">

@@ -12,7 +12,7 @@ export default function Projects() {
                     <a href="calculator-lock.html">
                         <div
                             className="project"
-                            data-projectName="Calculator Lock"
+                            data-projectname="Calculator Lock"
                         >
                             <Image
                                 src="/Group-1198-300x146.png"
@@ -26,7 +26,7 @@ export default function Projects() {
                     <a href="koko-mix-admin.html">
                         <div
                             className="project"
-                            data-projectName="KOKO-MIX ADMIN"
+                            data-projectname="KOKO-MIX ADMIN"
                         >
                             <Image
                                 src="/Screenshot-2020-09-25-at-3.26.37-PM-1024x508.png"
@@ -38,7 +38,7 @@ export default function Projects() {
                     </a>
 
                     <a href="smrtsgn-2.html">
-                        <div className="project" data-projectName="SMRTSGN">
+                        <div className="project" data-projectname="SMRTSGN">
                             <Image
                                 src="/Screenshot-2020-09-23-at-2.06.49-PM-1024x691.png"
                                 width={357}
@@ -49,7 +49,7 @@ export default function Projects() {
                     </a>
 
                     <a href="smrt16.html">
-                        <div className="project" data-projectName="SMRT16">
+                        <div className="project" data-projectname="SMRT16">
                             <Image
                                 src="/Screenshot-2020-09-25-at-3.19.07-PM-1024x501.png"
                                 width={393}
@@ -60,7 +60,7 @@ export default function Projects() {
                     </a>
 
                     <a href="votemee-app.html">
-                        <div className="project" data-projectName="Voteme App">
+                        <div className="project" data-projectname="Voteme App">
                             <Image
                                 src="/Screenshot-2020-09-22-at-12.59.53-PM-1024x525.png"
                                 width={375}
@@ -73,7 +73,7 @@ export default function Projects() {
                     <a href="spin-deals-app.html">
                         <div
                             className="project"
-                            data-projectName="SPIN DEALS APP"
+                            data-projectname="SPIN DEALS APP"
                         >
                             <Image
                                 src="/Screenshot-2020-09-22-at-1.02.22-PM-1024x491.png"
@@ -87,7 +87,7 @@ export default function Projects() {
                     <a href="abetterflorist.html">
                         <div
                             className="project"
-                            data-projectName="ABETTERFLORIST"
+                            data-projectname="ABETTERFLORIST"
                         >
                             <Image
                                 src="/Screenshot-2020-09-25-at-12.31.10-PM-1024x588.png"
@@ -101,7 +101,7 @@ export default function Projects() {
                     <a href="housekeeper-world.html">
                         <div
                             className="project"
-                            data-projectName="Housekeeper World"
+                            data-projectname="Housekeeper World"
                         >
                             <Image
                                 src="/Screenshot-2020-09-23-at-12.28.50-PM-1024x518.png"
@@ -115,7 +115,7 @@ export default function Projects() {
                     <a href="cbay-rent-a-car.html">
                         <div
                             className="project"
-                            data-projectName="CBAY RENT A CAR"
+                            data-projectname="CBAY RENT A CAR"
                         >
                             <Image
                                 src="/Screenshot-2020-09-25-at-12.37.15-PM-1024x620.png"
