@@ -17,6 +17,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-22-at-12.52.23-PM-1536x765.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>
                     </div>
@@ -27,6 +28,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-22-at-12.53.50-PM-768x389.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>{" "}
                     </div>
@@ -45,6 +47,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-23-at-12.31.19-PM-1024x567.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>
                     </div>
@@ -55,6 +58,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-25-at-12.37.15-PM-1024x620.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>
                     </div>
@@ -77,6 +81,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-22-at-12.59.53-PM-1024x525.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>
                     </div>
@@ -87,6 +92,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-22-at-1.02.22-PM-1024x491.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>{" "}
                     </div>
@@ -108,6 +114,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-23-at-12.43.58-PM-1536x887.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>
                     </div>
@@ -118,6 +125,7 @@ export default function PriceCards() {
                                 src="/Screenshot-2020-09-23-at-12.43.41-PM-1536x775.png"
                                 width={201}
                                 height={99}
+                                alt="vasilkoff"
                             />
                         </a>
                     </div>

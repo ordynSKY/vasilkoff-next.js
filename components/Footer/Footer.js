@@ -124,7 +124,7 @@ export default function Footer() {
                                 <Link href="/portfolio">Portfolio</Link>
                             </li>
                             <li>
-                                <a href="#map">Contact Us</a>
+                                <a href="/#map">Contact Us</a>
                             </li>
                         </ul>
                     </div>

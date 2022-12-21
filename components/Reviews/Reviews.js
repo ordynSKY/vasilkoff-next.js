@@ -13,6 +13,7 @@ export default function Reviews() {
                             src="/photo_2020-09-25-13.42.31-150x150.jpeg"
                             width={110}
                             height={110}
+                            alt="vasilkoff"
                         />
                     </div>
                     <div className="review_right">
@@ -38,6 +39,7 @@ export default function Reviews() {
                             src="/photo_2020-10-07-10.01.38-150x150.jpeg"
                             width={110}
                             height={110}
+                            alt="vasilkoff"
                         />
                     </div>
                     <div className="review_right">

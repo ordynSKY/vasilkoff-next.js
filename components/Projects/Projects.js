@@ -18,6 +18,7 @@ export default function Projects() {
                                 src="/Group-1198-300x146.png"
                                 width={394}
                                 height={193}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -31,6 +32,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-25-at-3.26.37-PM-1024x508.png"
                                 width={388}
                                 height={193}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -41,6 +43,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-23-at-2.06.49-PM-1024x691.png"
                                 width={357}
                                 height={241}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -51,6 +54,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-25-at-3.19.07-PM-1024x501.png"
                                 width={393}
                                 height={193}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -61,6 +65,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-22-at-12.59.53-PM-1024x525.png"
                                 width={375}
                                 height={193}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -74,6 +79,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-22-at-1.02.22-PM-1024x491.png"
                                 width={375}
                                 height={193}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -87,6 +93,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-25-at-12.31.10-PM-1024x588.png"
                                 width={357}
                                 height={205}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -100,6 +107,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-23-at-12.28.50-PM-1024x518.png"
                                 width={381}
                                 height={193}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>
@@ -113,6 +121,7 @@ export default function Projects() {
                                 src="/Screenshot-2020-09-25-at-12.37.15-PM-1024x620.png"
                                 width={357}
                                 height={216}
+                                alt="vasilkoff"
                             />
                         </div>
                     </a>

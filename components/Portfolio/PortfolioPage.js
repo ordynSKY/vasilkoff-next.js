@@ -1,61 +1,45 @@
 import Link from "next/link";
 import Image from "next/image";
+import { db } from "../../firebase";
+import { getDoc, getDocs, collection, doc } from "firebase/firestore";
+import { useContext, useEffect, useState } from "react";
+import { DataContext } from "../Context/DataContext";
 
 export default function PortfolioPage() {
-    const array = [
-        {
-            image: "/Group-1198-300x146.png",
-            title: "Calculator Lock",
-            details:
-                "Calculator vault is a great privacy protection application to easily hide photos and videos you don’t want others to see on your Android device. Hide",
-            id: 1,
-        },
-        {
-            image: "/Screenshot-2020-09-25-at-3.26.37-PM-1024x508.png",
-            title: "KOKO-MIX ADMIN",
-            details:
-                "KOKOMIX was founded on September 1996 by George and Theodoros Chatzigiannakou. A small production unit that produces and delivers ready-mix concrete in the area of",
-            id: 2,
-        },
-        {
-            image: "/Screenshot-2020-09-23-at-2.06.49-PM-1024x691.png",
-            title: "SMRTSGN",
-            details:
-                "What do we do SmrtSgn is a regtech startup which can help effectively regulate the markets of Virtual currencies (according to AMLD5) and Decentralized Securities",
-            id: 3,
-        },
-        {
-            image: "/Screenshot-2020-09-25-at-3.19.07-PM-1024x501.png",
-            title: "SMRT16",
-            details:
-                "What do we do SmrtSgn is a regtech startup which can help effectively regulate the markets of Virtual currencies (according to AMLD5) and Decentralized Securities",
-            id: 4,
-        },
-    ];
+    const [responseData, setResponseData] = useState([]);
+    const context = useContext(DataContext);
 
-    console.log(array);
+    useEffect(() => {
+        console.log("context", context);
+    }, []);
+
+    console.log("arrayContext", context.arrayData);
 
     return (
         <>
             <div className="portfolio_page_heading">Our Work</div>
             <section className="portfolio_page">
                 <div className="project_list project_list1">
-                    {array.map((i) => (
+                    {Object.keys(context.arrayData).map((i, idx) => (
                         <div
                             className="project"
                             data-projectName="Calculator Lock"
-                            key={i.id}
+                            key={idx}
                         >
-                            <a href="calculator-lock.html">
+                            <a href={`/portfolio/` + i}>
                                 <Image
-                                    src={i.image}
+                                    src={context.arrayData[i].image}
                                     width={472}
                                     height={230}
                                     alt="vasilkoff"
                                 />
                             </a>
-                            <div className="title">{i.title}</div>
-                            <div className="detail">{i.details}</div>
+                            <div contentEditable="true" className="title">
+                                {context.arrayData[i].title}
+                            </div>
+                            <div className="detail">
+                                {context.arrayData[i].details}
+                            </div>
                         </div>
                     ))}
                 </div>

@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Script from "next/script";
 import Head from "next/head";
+import DataProvider from "../components/Context/DataContext";
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -25,8 +26,9 @@ function MyApp({ Component, pageProps }) {
                     type="text/css"
                 />
             </Head>
-
-            <Component {...pageProps} />
+            <DataProvider>
+                <Component {...pageProps} />
+            </DataProvider>
             <Script src="/scripts/vanilla-tilt.js" />
             <Script src="/scripts/vanilatilt.js" />
         </>
