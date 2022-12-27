@@ -7,12 +7,13 @@ import { getFunctions } from "firebase/functions";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB6ZFiDMuD6g7kaMwksJEXgOKzKUbktBpI",
-    authDomain: "vasilkoff-test.firebaseapp.com",
-    projectId: "vasilkoff-test",
-    storageBucket: "vasilkoff-test.appspot.com",
-    messagingSenderId: "774858669905",
-    appId: "1:774858669905:web:9658303f6661e8b20c1d70",
+    apiKey: "AIzaSyCO85HA4C5Wi0YWdjM4g8rBs9kJggPgXeE",
+    authDomain: "vasilkoffcom-1532682115746.firebaseapp.com",
+    projectId: "vasilkoffcom-1532682115746",
+    storageBucket: "vasilkoffcom-1532682115746.appspot.com",
+    messagingSenderId: "984244302774",
+    appId: "1:984244302774:web:32d5800f25cebf27a48717",
+    measurementId: "G-4SQX3RQYV3",
 };
 
 // Initialize Firebase
