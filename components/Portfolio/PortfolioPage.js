@@ -25,6 +25,7 @@ export default function PortfolioPage() {
                                     alt="vasilkoff"
                                 />
                             </Link>
+                            {console.log("HREF: ", i)}
                             <div className="title">
                                 {context.arrayData[i].title}
                             </div>
@@ -36,12 +37,12 @@ export default function PortfolioPage() {
                 </div>
 
                 <div className="pageno_list">
-                    <Link href="portfolio.html" className="active">
+                    {/* <Link href="portfolio.html" className="active">
                         1
                     </Link>
                     <Link href="portfolio2.html">2</Link>
                     <Link href="portfolio3.html">3</Link>
-                    <Link href="portfolio4.html">4</Link>
+                    <Link href="portfolio4.html">4</Link> */}
                 </div>
             </section>
         </>

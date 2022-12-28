@@ -1,13 +1,11 @@
 import { useRouter } from "next/router";
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { DataContext } from "../../components/Context/DataContext";
 import Image from "next/image";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import TemplateComponent from "react-mustache-template-component";
-import moment from "moment";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "../../firebase";
+import Link from "next/link";
 
 export default function PortfolioSomePage() {
     const router = useRouter();
@@ -18,15 +16,15 @@ export default function PortfolioSomePage() {
         <>
             <Header />
 
-            <section class="calculator p_section">
-                <div class="p_left">
-                    <div class="p_heading">
+            <section className="calculator p_section">
+                <div className="p_left">
+                    <div className="p_heading">
                         {context.arrayData &&
                             context.arrayData[id] &&
                             context.arrayData[id].title}
                     </div>
-                    <div class="p_pub_date">September 25, 2020</div>
-                    <div class="p_img">
+                    <div className="p_pub_date">September 25, 2020</div>
+                    <div className="p_img">
                         <Image
                             src={
                                 context.arrayData &&
@@ -38,7 +36,7 @@ export default function PortfolioSomePage() {
                             alt="vasilkoff"
                         />
                     </div>
-                    <div class="p_detail">
+                    <div className="p_detail">
                         <TemplateComponent
                             template={
                                 context.arrayData &&
@@ -50,16 +48,21 @@ export default function PortfolioSomePage() {
 
                     <div w3-include-html="portfolioSocialMedia.html"></div>
 
-                    <div class="p_otherLink">
+                    <div className="p_otherLink">
                         <a href="koko-mix-admin.html">
-                            {" "}
                             <i class="fa-solid fa-circle-left"></i>KOKO-MIX
                             ADMIN
                         </a>
                     </div>
                 </div>
 
-                <div w3-include-html="trending.html"></div>
+                <TemplateComponent
+                    template={
+                        context.arrayData &&
+                        context.arrayData[id] &&
+                        context.arrayData[id].trending
+                    }
+                />
             </section>
 
             <Footer />
