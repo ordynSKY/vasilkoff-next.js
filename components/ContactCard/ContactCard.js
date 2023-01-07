@@ -15,9 +15,9 @@ export default function ContactCard() {
                     <div className="left_head">Find our office in Paphos</div>
                     <div className="left_para">
                         +35796253566 or +35799169229
-                        <br />
-                        sp@vasilkoff.com or maxim@vasilkoff.com
-                        <br />
+                        <div style={{ margin: "10px 0 10px 0" }}>
+                            sp@vasilkoff.com or maxim@vasilkoff.com
+                        </div>
                         Glastonos 12-14, 2nd Floor, Paphos 8010, Cyprus
                     </div>
                     <div className="gmap_container">

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 /* html,
 body {
@@ -82,7 +82,7 @@ header .toggle {
     header {
         position: relative;
         width: 100%;
-        height: 230px;
+        height: 180px;
         top: 0;
         left: 0;
         margin: 0px 0%;
@@ -105,7 +105,7 @@ header .toggle {
     }
     header .toggle {
         position: relative;
-        top: 90px;
+        top: 70px;
         right: 10%;
         /* padding: 226px 5px 5px 5px; */
         display: block;
@@ -340,7 +340,7 @@ header .toggle {
 
     .hero_section .right_col img {
         position: relative;
-        top: -50px;
+        top: -10px;
         width: 100%;
         perspective: 1000px;
         transition-duration: 0.3s;
@@ -350,10 +350,10 @@ header .toggle {
     }
 
     .hero_section .left_col .hero_heading {
-        margin: 40px 0 40px 0;
+        margin: 0 0 30px 0;
         color: #990000;
         font-family: "Lato", Sans-serif;
-        font-size: 58px;
+        font-size: 44px;
         font-weight: 900;
         text-transform: none;
         font-style: normal;
@@ -361,11 +361,13 @@ header .toggle {
         line-height: 1.2em;
     }
     .hero_section .left_col .hero_para {
-        font-size: 2.4em;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
         color: #5b6f82;
     }
     .hero_section .left_col .hero_btn {
-        margin: 40px 0;
+        margin: 30px 0;
     }
     .hero_section .left_col .hero_btn a {
         text-decoration: none;
@@ -386,6 +388,11 @@ header .toggle {
         border-radius: 26px 26px 26px 26px;
         padding: 13px 47px 13px 47px;
         transition: 0.1s ease-in-out;
+
+        font-size: 16px;
+        line-height: 1.4em;
+        border-width: 2px 2px 2px 2px;
+        padding: 13px 47px 13px 47px;
     }
     .hero_section .left_col .hero_btn a:hover {
         background-color: #990000;
@@ -529,19 +536,24 @@ section.help .sub-para {
 @media (max-width: 768px) and (min-height: 226px) {
     /*@media (min-width:768px) and (min-width:768px){*/
 
+    section.help .cards_help .hcard {
+        padding: 50px 30px;
+    }
+
     section.help {
         margin-top: -30px;
         padding: 0 5%;
 
         width: 100%;
         position: relative;
+        padding-bottom: 15px;
     }
     section.help .heading {
         position: relative;
         color: #990000;
         font-family: "Lato", Sans-serif;
-        font-size: 78px;
-        font-weight: 530;
+        font-size: 34px;
+        font-weight: 900;
         text-transform: none;
         font-style: normal;
         text-decoration: none;
@@ -551,19 +563,22 @@ section.help .sub-para {
     }
 
     section.help .cards_help .hcard {
-        width: 100vw;
+        width: 333px;
     }
     section.help .cards_help .hcard img {
-        width: 282px;
+        width: 77px;
+        height: 77px;
+        margin-bottom: 25px;
     }
     section.help .sub-head {
-        font-size: 56px;
-        font-weight: 630;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 1.4em;
+        margin-top: 8px;
     }
     section.help .sub-para {
-        font-size: 38px;
+        font-size: 16px;
+        line-height: 1.5em;
     }
 }
 
@@ -653,13 +668,16 @@ section.help .sub-para {
         padding: 90px 5%;
     }
     .about_section .aleft_col img {
-        width: 92%;
+        width: 345px;
+        height: 230px;
         left: 1%;
+        margin-bottom: 50px;
         /*transform: translate(-50%, 50%);*/
     }
 
     .about_section .aright_col .about_heading {
-        font-size: 4.2em;
+        font-size: 34px;
+        line-height: 1.2em;
         text-align: center;
     }
 
@@ -670,15 +688,18 @@ section.help .sub-para {
 
     .about_section .aright_col .about_para {
         text-align: center;
-        font-size: 2.3em;
-        padding: 50px 5%;
+        font-size: 18px;
+        line-height: 1.5em;
+        padding: 50px 5% 0 5%;
     }
     .about_section .aright_col .about_btn {
         text-align: center;
     }
     .about_section .aright_col .about_btn a {
-        font-size: 1.6em;
-        /*line-height: 1.4em;*/
+        font-size: 16px;
+        line-height: 1.4em;
+        border-width: 2px 2px 2px 2px;
+        padding: 13px 47px 13px 47px;
     }
 }
 
@@ -802,15 +823,17 @@ section#projects .project_btn a:hover {
         padding: 80px 2%;
     }
     section#projects .projects_heading {
-        font-size: 3.4em;
+        font-size: 30px;
+        padding-bottom: 20px;
+        line-height: 1.2em;
     }
 
     section#projects .project_list .project {
         position: relative;
-        width: 98vw;
+        width: 345px;
         /*height: 100%;*/
         gap: 40px;
-        height: 361px;
+        height: 186px;
     }
     section#projects .project_list .project img {
         width: 100%;
@@ -818,25 +841,15 @@ section#projects .project_btn a:hover {
         border-radius: 10px;
     }
 
+    section#projects .project_btn {
+        padding: 50px 0 100px 0;
+    }
+
     section#projects .project_btn a {
-        text-decoration: none;
-        /*font-size: 1.2em;*/
-        font-family: "Lato", Sans-serif;
-        font-size: 2.4em;
-        font-weight: 700;
-        text-transform: none;
-        font-style: normal;
-        text-decoration: none;
-        line-height: 2em;
-        fill: #990000;
-        color: #990000;
-        background-color: rgba(255, 255, 255, 0);
-        border-style: solid;
+        font-size: 16px;
+        line-height: 1.4em;
         border-width: 2px 2px 2px 2px;
-        border-color: #990000;
-        border-radius: 26px 26px 26px 26px;
         padding: 13px 47px 13px 47px;
-        transition: 0.1s ease-in-out;
     }
 }
 
@@ -959,14 +972,19 @@ section.pricesCards .pcard .pcard_pic a img {
     }
     section.prices .prices_para {
         text-align: center;
-        padding: 50px 5%;
+        padding: 20px 5% 0 5%;
         color: var(--baseColor);
-        font-size: 2.5em;
-        margin-bottom: 35px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5rem;
+        /* margin-bottom: 35px; */
         font-family: "Lato", Sans-serif;
     }
     section.prices .btn_link a {
-        font-size: 2.4em;
+        font-size: 16px;
+        line-height: 1.4em;
+        border-width: 2px 2px 2px 2px;
+        padding: 13px 47px 13px 47px;
     }
 
     section.pricesCards {
@@ -980,18 +998,24 @@ section.pricesCards .pcard .pcard_pic a img {
         width: 100%;
     }
     section.pricesCards .pcard .pcard_head {
-        margin: 40px 0;
-        font-size: 46px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: bold;
     }
     section.pricesCards .pcard .pcard_para {
-        font-size: 34px;
+        font-size: 16px;
+        font-weight: normal;
+        text-transform: none;
+        font-style: italic;
+        text-decoration: none;
+        line-height: 24px;
     }
     section.pricesCards .pcard .pcard_hilight {
-        font-size: 27px;
+        font-size: 20px;
     }
     section.pricesCards .pcard .pcard_pic a img {
-        width: 100%;
-        height: 60vh;
+        width: 261px;
+        height: 121px;
     }
     section.pricesCards .pcard:nth-child(3) .pcard_hilight {
         font-size: 20px;
@@ -1049,43 +1073,50 @@ section.map .leftportion_map .gmap_container iframe {
     section.map {
         position: relative;
         /*width: 100%;*/
-        margin: 180px 10% 60px 10%;
+        margin: 100px 10% 60px 10%;
         padding: 80px 20px 40px 20px;
         background-color: #eaeaea2e;
     }
     section.map .map_heading {
-        font-size: 4.8em;
+        font-size: 34px;
+        line-height: 1.2em;
+    }
+
+    section.map .leftportion_map .gmap_container iframe {
+        width: 200px;
+        height: 185px;
     }
 
     section.map .map_para {
         padding: 0 30px;
         color: #5b6f82;
         font-family: "Lato", Sans-serif;
-        font-size: 32px;
         font-weight: 400;
         text-transform: none;
         font-style: normal;
         text-decoration: none;
-        line-height: 1.5em;
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: center;
+        font-size: 18px;
+        line-height: 1.5em;
     }
     section.map .leftportion_map {
         padding: 20px 30px;
     }
 
     section.map .leftportion_map .left_head {
-        padding: 20px 30px;
-
-        font-size: 3.8em;
         text-align: center;
+        font-size: 24px;
+        line-height: 1.4em;
     }
 
     section.map .leftportion_map .left_para {
         text-align: center;
-        font-size: 2.4em;
-        padding: 20px 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        line-height: 1em;
     }
     section.map .leftportion_map .left_para br {
         margin: 80px 0;
@@ -1113,7 +1144,7 @@ section.review .review_detail .review_ppic {
     width: 109px;
     height: 109px;
     border-radius: 50%;
-    background: #ccc;
+    /* background: #ccc; */
     /*background-size: cover;*/
 }
 section.review .review_detail .review_ppic img {
@@ -1188,9 +1219,9 @@ section.review .review_detail .review_right .review_right_desig a {
         margin: 80px 0;
     }
     section.review .review_heading {
-        font-size: 4.6em;
-
-        margin: 80px 0;
+        margin: 80px 20px;
+        font-size: 34px;
+        line-height: 1.2em;
     }
 
     section.review .review_detail {
@@ -1203,7 +1234,7 @@ section.review .review_detail .review_right .review_right_desig a {
 
         height: 144px;
         border-radius: 50%;
-        background: #ccc;
+        /* background: #ccc; */
         text-align: center;
         /* justify-content: center; */
         /* align-items: center; */
@@ -1213,24 +1244,27 @@ section.review .review_detail .review_right .review_right_desig a {
         transform: translate(-50%);
     }
     section.review .review_detail .review_ppic img {
-        width: 163px;
-        height: 143px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
     }
     section.review .review_detail1 .review_right {
         width: 100%;
     }
     section.review .review_detail .review_right .review_right_quote {
-        font-size: 2.4em;
+        font-size: 20px;
+        line-height: 1.5em;
     }
     section.review .review_detail .review_right .review_right_name {
-        font-size: 2.4em;
+        font-size: 18px;
+        line-height: 1.2em;
     }
     section.review .review_detail .review_right .review_right_desig {
         margin: 20px 0;
     }
     section.review .review_detail .review_right .review_right_desig a {
-        font-size: 2em;
+        font-size: 18px;
+        line-height: 1.2em;
     }
 
     section.review .review_detail:nth-child(odd) {
@@ -1372,21 +1406,21 @@ footer .footer_terms .social li a i {
     }
     footer .upper_part .firstadd_country {
         text-align: center;
-        font-size: 38px;
         font-weight: 400;
+        font-size: 16px;
         line-height: 1.5em;
     }
     footer .upper_part .firstadd_add {
-        font-size: 35px;
         font-weight: 400;
         text-transform: none;
         font-style: normal;
         text-decoration: none;
-        line-height: 1.5em;
         margin: 10px 0 40px 0;
+        font-size: 16px;
+        line-height: 1.5em;
     }
     footer .upper_part .firstadd_social ul li i {
-        font-size: 30px;
+        font-size: 20px;
         margin-right: 10px;
         color: #ffffff;
     }
@@ -1395,7 +1429,8 @@ footer .footer_terms .social li a i {
     }
 
     footer .upper_part .firstadd_social ul li a {
-        font-size: 28px;
+        font-size: 12px;
+        font-weight: 400;
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -1414,7 +1449,7 @@ footer .footer_terms .social li a i {
     footer .footer_terms .terms li a {
         text-decoration: none;
         color: var(--baseColor);
-        font-size: 22px;
+        font-size: 12px;
     }
     footer .footer_terms .social {
         list-style: none;
@@ -1424,7 +1459,7 @@ footer .footer_terms .social li a i {
     footer .footer_terms .social li a i {
         color: #6c6c6c;
 
-        font-size: 28px;
+        font-size: 20px;
     }
 
     footer .upper_part {
@@ -1723,7 +1758,7 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
         text-align: center;
     }
     .heading {
-        font-size: 48px;
+        font-size: 30px;
     }
     .about_section {
         position: relative;
@@ -1731,7 +1766,7 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
         width: 100%;
         display: flex;
         align-items: center;
-        margin: 80px 0 40px 0;
+        margin: 150px 0 40px 0;
         padding: 0 0%;
         /* justify-content: space-between; */
         /* gap: 40px; */
@@ -2672,4 +2707,11 @@ section.terms b {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .hero_img {
+        max-width: 315px;
+        max-height: 315px;
+    }
 }

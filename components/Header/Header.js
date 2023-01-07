@@ -26,7 +26,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <div className="logo">
+                <div class="logo">
                     <Link href="/">
                         <Image
                             src="/logo-vasilkoff.png"
@@ -36,11 +36,11 @@ export default function Header() {
                         />
                     </Link>
                 </div>
-                <div className="toggle"></div>
-                <div className="menubar">
-                    <ul className="menu">
+                <div class="toggle"></div>
+                <div class="menubar">
+                    <ul class="menu">
                         <li>
-                            <Link href="/" className="active">
+                            <Link href="/" class="active">
                                 Home
                             </Link>
                         </li>

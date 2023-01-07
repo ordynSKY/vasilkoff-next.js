@@ -34,6 +34,7 @@ export default function Section() {
                             width={525}
                             height={525}
                             alt="vasilkoff"
+                            priority
                         />
                     </div>
                 </div>
