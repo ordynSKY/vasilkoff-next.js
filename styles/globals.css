@@ -1956,7 +1956,7 @@ section.about_oppor .about_oppor_detail .deatil .para {
 @media (max-width: 768px) and (min-height: 226px) {
     section.about_oppor .about_oppor_detail {
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
     }
     section.about_oppor .about_oppor_detail img {
         width: 315px;
