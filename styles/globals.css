@@ -1867,21 +1867,24 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
         .about_awards_detail
         .about_awards_detail_left
         .about_heading {
-        font-size: 34px;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 1.4em;
     }
     section.about_awards
         .about_awards_detail
         .about_awards_detail_left
         .about_para {
-        font-size: 31px;
+        font-size: 16px;
+        line-height: 1.5em;
     }
     section.about_awards .about_awards_detail .about_awards_detail_right {
         width: 100%;
     }
     section.about_awards .about_awards_detail .about_awards_detail_right img {
-        width: 100%;
-        height: 502px;
-        border-radius: 15px;
+        width: 315px;
+        height: 210px;
+        border-radius: 10px 10px 10px 10px;
     }
 }
 
@@ -1953,21 +1956,22 @@ section.about_oppor .about_oppor_detail .deatil .para {
 @media (max-width: 768px) and (min-height: 226px) {
     section.about_oppor .about_oppor_detail {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     section.about_oppor .about_oppor_detail img {
-        max-width: 100%;
-        height: 524px;
-        /* max-width: 100%; */
-        border-radius: 0;
+        width: 315px;
+        height: 210px;
+        border-radius: 6px 6px 0px 0px;
     }
 
     section.about_oppor .about_oppor_detail .deatil .sub_head {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 1.2em;
         text-align: center;
     }
     section.about_oppor .about_oppor_detail .deatil .para {
-        font-size: 36px;
+        font-size: 18px;
+        line-height: 1.5em;
         text-align: center;
     }
 }
