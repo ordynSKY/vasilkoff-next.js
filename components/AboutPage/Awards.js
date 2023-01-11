@@ -1,6 +1,27 @@
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Awards() {
+    useEffect(() => {
+        var toggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menubar");
+        var menuItems = document.querySelectorAll("header .menubar ul li a");
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle("activeMob");
+            menu.classList.toggle("activeMenu");
+        });
+
+        for (let i = 0; i < menuItems.length; i++) {
+            menuItems[i].addEventListener("click", function () {
+                var c = 0;
+                while (c < menuItems.length) {
+                    menuItems[c++].classList.remove("active");
+                }
+                menuItems[i].classList.add("active");
+            });
+        }
+    });
+
     return (
         <>
             <section className="about_awards">

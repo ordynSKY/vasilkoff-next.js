@@ -595,8 +595,7 @@ section.help .sub-para {
     gap: 40px;
     /*flex-wrap: wrap;*/
 }
-.about_section .left_col {
-}
+
 .about_section .aright_col .about_heading {
     margin-top: 0.5rem;
     margin-bottom: 30px;
@@ -671,12 +670,16 @@ section.help .sub-para {
         width: 345px;
         height: 230px;
         left: 1%;
-        margin-bottom: 50px;
+        /* display: none; */
         /*transform: translate(-50%, 50%);*/
     }
 
     .about_section .aright_col .about_heading {
-        font-size: 34px;
+        margin-top: 0;
+    }
+
+    .about_section .aright_col .about_heading {
+        font-size: 30px;
         line-height: 1.2em;
         text-align: center;
     }
@@ -690,7 +693,7 @@ section.help .sub-para {
         text-align: center;
         font-size: 18px;
         line-height: 1.5em;
-        padding: 50px 5% 0 5%;
+        padding: 30px 5% 0 5%;
     }
     .about_section .aright_col .about_btn {
         text-align: center;
@@ -823,7 +826,7 @@ section#projects .project_btn a:hover {
         padding: 80px 2%;
     }
     section#projects .projects_heading {
-        font-size: 30px;
+        font-size: 24px;
         padding-bottom: 20px;
         line-height: 1.2em;
     }
@@ -1766,17 +1769,22 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
         width: 100%;
         display: flex;
         align-items: center;
-        margin: 150px 0 40px 0;
+        margin: 0 0 40px 0;
         padding: 0 0%;
         /* justify-content: space-between; */
         /* gap: 40px; */
         /* flex-wrap: wrap; */
     }
+
+    section.about_detail .about_section .aright_col {
+        margin: 0;
+    }
+
     section.about_team .heading {
-        font-size: 48px;
+        font-size: 30px;
     }
     section.about_team .about_team_para {
-        font-size: 36px;
+        font-size: 16px;
         padding: 0 20px;
     }
 
@@ -1791,11 +1799,12 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
     }
 
     section.about_team .about_team_members .about_team_member {
-        margin: 40px 0;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     section.about_team .about_team_members .about_team_member {
         position: relative;
-        margin: 40px 0;
         /*left: 50%;*/
         /*transform: translate(-120px);*/
     }
@@ -1815,8 +1824,8 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
     section.about_team .about_team_members .about_team_member .name {
         position: relative;
         margin-top: 15px;
-        font-size: 30px;
-        color: #333;
+        font-size: 16px;
+        color: #7a7a7a;
         line-height: 1.4;
         font-style: italic;
         text-align: center;
@@ -1825,8 +1834,9 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        max-height: 80vh;
         border-radius: 15px 15px 15px 15px;
+        width: 285px;
+        height: 374px;
     }
 
     section.about_awards {
@@ -2492,11 +2502,11 @@ section.portfolio_page .pageno_list a:hover {
 
     section.portfolio_page .project_list .project a img {
         position: relative;
-        width: 100%;
-        height: 444px;
+        width: 335px;
+        height: 167px;
     }
     section.portfolio_page .project_list .project .title {
-        font-size: 34px;
+        font-size: 21px;
     }
 
     section.portfolio_page .project_list .project .detail {
@@ -2504,7 +2514,7 @@ section.portfolio_page .pageno_list a:hover {
         font-family: "Roboto", Sans-serif;
         font-weight: 400;
         line-height: 1.5em;
-        font-size: 32px;
+        font-size: 16px;
         color: #777;
         padding: 5px 30px 25px 30px;
     }
@@ -2713,5 +2723,6 @@ section.terms b {
     .hero_img {
         max-width: 315px;
         max-height: 315px;
+        display: none;
     }
 }

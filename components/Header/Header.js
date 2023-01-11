@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import { resolve } from "styled-jsx/css";
 
 export default function Header() {
     useEffect(() => {
@@ -23,10 +24,21 @@ export default function Header() {
         }
     });
 
+    const getPosts = async (url) => {
+        const response = await fetch(url);
+        const posts = await response.json();
+
+        return posts;
+    };
+
+    getPosts("https://jsonplaceholder.typicode.com/posts").then((res) => {
+        console.log(res[0].body);
+    });
+
     return (
         <>
             <header>
-                <div class="logo">
+                <div className="logo">
                     <Link href="/">
                         <Image
                             src="/logo-vasilkoff.png"
@@ -36,11 +48,11 @@ export default function Header() {
                         />
                     </Link>
                 </div>
-                <div class="toggle"></div>
-                <div class="menubar">
-                    <ul class="menu">
+                <div className="toggle"></div>
+                <div className="menubar">
+                    <ul className="menu">
                         <li>
-                            <Link href="/" class="active">
+                            <Link href="/" className="active">
                                 Home
                             </Link>
                         </li>
