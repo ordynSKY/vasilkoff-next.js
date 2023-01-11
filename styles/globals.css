@@ -1882,7 +1882,7 @@ section.about_awards .about_awards_detail .about_awards_detail_right img {
         width: 100%;
     }
     section.about_awards .about_awards_detail .about_awards_detail_right img {
-        width: 315px;
+        width: 300px;
         height: 210px;
         border-radius: 10px 10px 10px 10px;
     }
@@ -1959,7 +1959,7 @@ section.about_oppor .about_oppor_detail .deatil .para {
         flex-direction: column;
     }
     section.about_oppor .about_oppor_detail img {
-        width: 315px;
+        width: 300px;
         height: 210px;
         border-radius: 6px 6px 0px 0px;
     }
